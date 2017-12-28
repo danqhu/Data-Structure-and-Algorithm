@@ -57,7 +57,7 @@ void DoublyLinkedList<T>::deleteNode(const T &el){
 		if(head == tail && head->info == el){
 			delete head;
 			head = tail = 0;
-		}else if( head->info == el){
+		}else if( head->info == el){                     
 			head = head->next;
 			delete head->prev;
 			head->prev = 0;
